@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-  <title>اطلاعیه درگذشت — بانو بتول محرومی</title>
+  <title>قدردانی مراسم وداع و اطلاعیه مراسم سوم درگذشت — بانو بتول محرومی</title>
 
   <!-- فونت‌ها -->
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -46,7 +46,7 @@
       box-shadow: 0 8px 24px rgba(0,0,0,0.6);
       backdrop-filter: blur(6px);
       border: 1px solid rgba(255,255,255,0.08);
-      overflow: hidden;
+      overflow-y: auto;
       max-height: 98vh;
       display: flex;
       flex-direction: column;
@@ -100,13 +100,6 @@
       filter: brightness(0.9);
     }
 
-    p.name {
-      font-size: 15px;
-      color: #d8d8a1;
-      margin: 8px 0 14px;
-      line-height: 1.6;
-    }
-
     h3 {
       margin: 10px 0 6px;
       font-size: 18px;
@@ -114,7 +107,7 @@
     }
 
     p {
-      line-height: 1.6;
+      line-height: 1.1;
       margin: 0;
       font-size: 14px;
     }
@@ -124,7 +117,7 @@
       justify-content: center;
       gap: 6px;
       flex-wrap: wrap;
-      margin-top: 6px;
+      margin-top: 4px;
     }
 
     .btn {
@@ -159,13 +152,19 @@
       font-size: 11px;
       color: var(--muted);
     }
+
+    .typewriter {
+      text-align: justify;
+      white-space: pre-wrap;
+      font-size: 14px;
+      line-height: 1.8;
+      min-height: 120px;
+    }
   </style>
 </head>
 <body>
   <article class="card">
-    <h1>وداع مادری از تبار مهر</h1>
-
-    <p>با قلبی سوگوار، با نهایت تأسف و تأثر درگذشت مادری مهربان و همسری دلسوز</p>
+    <h1>سومین روز در گذشت</h1>
 
     <div class="lead-wrapper">
       <p class="lead">مهربانو <br>بتول محرومی</p>
@@ -174,29 +173,12 @@
       </div>
     </div>
 
-    <p class="name">
-      همسر گرامی زنده‌یاد حسین نمک چیان<br>
-      مادر بزرگوار امیر، اعظم و ایرج نمک چیان
-    </p>
+    <h3>قدردانی </h3>
+    <p id="typewriter" class="typewriter"></p>
+    <p id="second" style="opacity:0; transition:opacity 2s ease;">.                                .</p>
 
-    <h3>مراسم تشییع</h3>
-    <p>روز دوشنبه ۱۴۰۴/۰۷/۱۴، ساعت ۱۱ صبح<br>قطعه ۲ ایثارگران، وادی تازه‌آباد، رشت</p>
-
-    <div class="btn-group">
-      <a class="btn" href="https://maps.app.goo.gl/U2B4v1YQaNDRpbnA7" target="_blank">
-        <i class="lucide lucide-map-pin"></i> مسیریابی در گوگل
-      </a>
-      <a class="btn" href="https://nshn.ir/_b_bWDbIYBV6q8" target="_blank">
-        <i class="lucide lucide-navigation"></i> مسیریابی در نشان
-      </a>
-      <a class="btn" href="https://waze.com/ul?ll=37.275896,49.589097&navigate=yes" target="_blank">
-        <i class="lucide lucide-map"></i> مسیر یابی در Waze
-      </a>
-    </div>
-
-    <h3 style="margin-top: 18px;">مراسم سوم</h3>
+    <h3 style="margin-top: 25px;">مراسم سوم</h3>
     <p>چهارشنبه ۱۴۰۴/۰۷/۱۶، ساعت ۱۴ الی ۱۵:۳۰<br>مسجد الزهرا (ع)، تهران، شهرک غرب، خیابان هرمزان</p>
-
     <div class="btn-group">
       <a class="btn" href="https://maps.app.goo.gl/57wtXsUnMPxCNGio7" target="_blank">
         <i class="lucide lucide-map-pin"></i> مسیریابی در گوگل
@@ -204,14 +186,26 @@
       <a class="btn" href="https://nshn.ir/54_bvrki_x49I_" target="_blank">
         <i class="lucide lucide-navigation"></i> مسیریابی در نشان
       </a>
-      <a class="btn" href="https://waze.com/ul?ll=35.76409885422156,51.373648925099076" target="_blank">
-        <i class="lucide lucide-map"></i> مسیر یابی در Waze
-      </a>
     </div>
 
-    <div class="credit">خانوادهای : محرومی ، نمک چیان و سایر وابستگان ، دوستان و آشنایان</div>
+    <div class="credit">با تقدیم مهر و احترام : ایرج نمک چیان</div>
   </article>
-</body>
-</html>
 
+<script>
+  const text = ' در راستای برگزاری باشکوه مراسم تشییع و وداع با مهربان مادرم، اینجانب ایرج نمک چیان به رسم ادب مراتب سپاس و قدردانی خود را از حضور ارزشمند و همراهی صمیمانه‌ی دوستان و آشنایان گرامی که با قبول زحمت از شهرهای دور و نزدیک در این مراسم، موجب تسلی خاطر بنده گردیدند، اعلام می نمایم ‎واز درگاه خداوند متعال، برای یکایک شما عزیزان، سلامتی، عزت، و توفیق روزافزون مسئلت می نمایم';
+  const target = document.getElementById("typewriter");
+  const second = document.getElementById("second");
+  let i = 0;
 
+  function type() {
+    if (i < text.length) {
+      target.innerHTML += text.charAt(i);
+      i++;
+      setTimeout(type, 40); // سرعت تایپ
+    } else {
+      second.style.opacity = 1; // نمایش پاراگراف دوم پس از پایان تایپ
+    }
+  }
+
+  window.onload = type;
+</script>
